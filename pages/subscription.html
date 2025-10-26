@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Select a Plan</h1>
+    </header>
+
+    <main class="features-grid">
+        <!-- ✅ 1 Month Plan -->
+        <div class="feature-column">
+            <h3>1 Month - $100</h3>
+            <p>Basic plan, includes standard features.</p>
+            <button onclick="goToPayment('1 Month')">Choose Plan</button>
+        </div>
+
+        <!-- ✅ 3 Months Plan -->
+        <div class="feature-column">
+            <h3>3 Months - $300</h3>
+            <p>Better value, includes priority support.</p>
+            <button onclick="goToPayment('3 Months')">Choose Plan</button>
+        </div>
+
+        <!-- ✅ 6 Months Plan -->
+        <div class="feature-column">
+            <h3>6 Months - $600</h3>
+            <p>Great deal, includes advanced analytics.</p>
+            <button onclick="goToPayment('6 Months')">Choose Plan</button>
+        </div>
+
+        <!-- ✅ 1 Year Plan -->
+        <div class="feature-column">
+            <h3>1 Year - $1200</h3>
+            <p>Best value, includes all premium features.</p>
+            <button onclick="goToPayment('1 Year')">Choose Plan</button>
+        </div>
+    </main>
+
+    <script src="premium.js"></script>
+
+</body>
+</html>

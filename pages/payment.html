@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script defer src="payment.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Complete Your Payment</h1>
+    </header>
+
+    <div>
+        <img src="payment.jpg" alt="Payment Logo" class="payment-logo"> <!-- ✅ Add Logo -->
+    </div>
+
+    <!-- ✅ Required Stripe Card Element -->
+    <div id="card-element"></div> 
+
+    <button id="checkout">Pay Now</button>
+    <main class="payment-container">
+        <p>You're subscribing to the <strong id="selected-plan">...</strong> plan.</p>
+        <button onclick="confirmPayment()"></button>
+    </main>
+    
+    <script src="../js/payment.js"></script>
+</body>
+</html>

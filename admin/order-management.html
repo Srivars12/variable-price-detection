@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order & Purchase Management</title>
+    <link rel="stylesheet" href="order-management.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Order & Purchase Management</h1>
+        
+        <h2>Recent Orders</h2>
+        <table id="orders">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Product</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2>Popular Products</h2>
+        <ul id="popular-products"></ul>
+
+        <h2>Update Purchase Link</h2>
+        <input type="number" id="product-id" placeholder="Enter Product ID">
+        <input type="text" id="purchase-link" placeholder="Enter New Purchase Link">
+        <button onclick="updatePurchaseLink()">Update</button>
+    </div>
+
+    <script src="order-management.js"></script>
+</body>
+</html>

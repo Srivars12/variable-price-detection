@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- ✅ Include Supabase Client Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="premium.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="search.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- ✅ Navigation Bar -->
+    <header>
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search for a product">
+            <button onclick="searchProduct()">Search</button>
+            <div id="result"></div>
+            <script type="module" src="../js/search.js"></script>
+        </div>
+        <div class="right-menu">
+            <button onclick="window.location.href='feedback.html'">Give Feedback</button>
+            <button onclick="window.location.href='premium.html';">Go to Premium</button>
+        </div>
+    </header>
+    <!-- ✅ Product Display Section -->
+    <main>
+        <h2>Available Products</h2>
+        <div id="products-container">
+            <!-- Products will be dynamically loaded here -->
+            <button onclick="window.location.href='product.html';"></button>
+        </div>
+    </main>
+
+    <!-- ✅ Load dashboard.js after Supabase -->
+    <script defer src="../js/dashboard.js"></script>
+    <script defer src="../js/search.js"></script>
+    
+</body>
+</html>

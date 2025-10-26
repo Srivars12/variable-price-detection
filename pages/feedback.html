@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+<main> 
+    <!-- ✅ Feedback Form Section -->
+    <section id="feedback-section">
+        <h2>Feedback Form</h2>
+        <form id="feedback-form">
+            
+            <!-- ✅ Overall Experience -->
+            <label>1. Overall Experience:</label>
+            <input type="range" id="experience" min="1" max="5" step="1">
+            <textarea placeholder="Overall Experience Comments"></textarea>
+
+            <!-- ✅ Response Time -->
+            <label>2. Response Time:</label>
+            <input type="radio" name="response" value="Yes"> Yes
+            <input type="radio" name="response" value="No"> No
+            <textarea placeholder="If No, please explain."></textarea>
+
+            <!-- ✅ Customer Support -->
+            <label>3. Customer Support:</label>
+            <input type="range" id="support" min="1" max="5" step="1">
+            <textarea placeholder="Customer Support Comments"></textarea>
+
+            <!-- ✅ Website Usability -->
+            <label>4. Website Usability:</label>
+            <input type="range" id="usability" min="1" max="5" step="1">
+            <textarea placeholder="Usability Comments"></textarea>
+
+            <!-- ✅ Pricing Satisfaction -->
+            <label>5. Pricing Satisfaction:</label>
+            <input type="range" id="pricing" min="1" max="5" step="1">
+            <textarea placeholder="Pricing Comments"></textarea>
+
+            <!-- ✅ Additional Feedback -->
+            <label>6. Additional Feedback:</label>
+            <textarea placeholder="Any additional comments?"></textarea>
+
+            <!-- ✅ Submit Button -->
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+    </main>
+<script src="../js/feedback.js"></script>
+</body>
+</html>

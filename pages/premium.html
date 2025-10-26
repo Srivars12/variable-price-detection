@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Features</title>
+    <link rel="stylesheet" href="premium.css">
+</head>
+<body>
+
+<h2>Premium Features</h2>
+<!-- ✅ Premium Features Modal -->
+<div id="premium-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <span class="close" onclick="window.location.href='dashboard.html'">&times;</span>
+        <h2 class="modal-title">Premium Features</h2>
+
+        <div class="features-grid">
+            <!-- Column 1 -->
+            <div class="feature-column">
+                <h3>Advanced Price Alerts</h3>
+                <p>Set up customized alerts with parameters such as specific airlines, departure times, or hotel star ratings.</p>
+                <h3>Price Prediction Algorithms</h3>
+                <p>Access to predictive analytics and algorithms that forecast future price trends, helping users make strategic booking decisions.</p>
+                <h3>Exclusive Deals</h3>
+                <p>Access to exclusive discounts, promotions, and deals negotiated with airlines, hotels, or travel agencies.</p>
+                <h3>Ad-Free Experience</h3>
+                <p>Enjoy a seamless browsing experience without intrusive advertisements or sponsored content.</p>
+                <h3>Dedicated Customer Support</h3>
+                <p>Priority customer support services, including live chat assistance, dedicated helpline, or personalized assistance with booking and itinerary management.</p>
+                <button class="select-plan" data-plan="Basic" onclick="goToPayment('Basic')">Choose Basic Plan</button>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="feature-column">
+                <h3>Search Functionality</h3>
+                <p>Users can search for flights, hotels, or vacation packages based on their desired destination, travel dates, and other preferences.</p>
+                <h3>Price Tracking</h3>
+                <p>Users can track the prices of flights and hotels for specific destinations and dates, receiving alerts when prices change.</p>
+                <h3>Price History</h3>
+                <p>Access to historical price data, allowing users to view price trends and make informed booking decisions.</p>
+                <h3>Email Alerts</h3>
+                <p>Receive email notifications when prices drop or rise for tracked flights or hotels.</p>
+                <h3>User Accounts</h3>
+                <p>Create and manage user accounts to save preferences, track bookings, and receive personalized recommendations.</p>
+                <button class="select-plan" data-plan="Pro" onclick="goToPayment('Pro')">Choose Pro Plan</button>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="feature-column">
+                <h3>Customizable Search Filters</h3>
+                <p>Refine search results based on preferences such as airline, hotel chain, price range, amenities, and more.</p>
+                <h3>Comparison Tools</h3>
+                <p>Compare prices and features across different airlines, hotels, or booking platforms to find the best deals.</p>
+                <h3>Interactive Maps</h3>
+                <p>Visualize flight routes, hotel locations, and nearby amenities through interactive maps.</p>
+                <h3>Customer Reviews</h3>
+                <p>Access user-generated reviews and ratings for flights, hotels, and destinations to make informed decisions.</p>
+                <h3>Mobile Optimization</h3>
+                <p>Responsive design that ensures usability and functionality across various devices, including smartphones and tablets.</p>
+                <button class="select-plan" data-plan="Premium" onclick="goToPayment('Premium')">Choose Premium Plan</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/premium.js"></script>
+</body>
+</html>
+
+
+
+

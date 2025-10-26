@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Products</title>
+    <link rel="stylesheet" href="manage-products.css">
+</head>
+<body>
+    <div class="admin-container">
+        <main class="dashboard">
+            <h1>Manage Products</h1>
+
+            <!-- ✅ Add Product Form -->
+            <form id="add-product-form">
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <input type="text" id="product-image" placeholder="Image URL" required>
+                <input type="number" id="product-price" placeholder="Price" required>
+                <textarea id="product-description" placeholder="Description" required></textarea>
+                <input type="text" id="product-buy link" placeholder="product buying link" required>
+                <button type="submit">Add Product</button>
+            </form>
+
+            <!-- ✅ Product List Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                    <!-- Products will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="manage-products.js"></script>
+</body>
+</html>

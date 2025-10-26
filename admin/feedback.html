@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Feedback Overview</title>
+    <link rel="stylesheet" href="feedback.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="feedback-container">
+        <h2>Feedback Analytics</h2>
+
+        <div class="chart-container">
+            <h3>Experience Rating</h3>
+            <canvas id="experienceChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3>Support Rating</h3>
+            <canvas id="supportChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3>Usability Rating</h3>
+            <canvas id="usabilityChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3>Pricing Rating</h3>
+            <canvas id="pricingChart"></canvas>
+        </div>
+
+        <div class="recent-feedback">
+            <h3>Recent Feedback</h3>
+            <ul id="feedback-list"></ul>
+        </div>
+    </div>
+
+    <script src="feedback.js"></script>
+    <script src="chart.js"></script> 
+</body>
+</html>

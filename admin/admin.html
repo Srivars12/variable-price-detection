@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="manage-users.html">Manage Users</a></li>
+                <li><a href="manage-products.html">Manage Products</a></li>
+                <li><a href="price-tracking.html">Pricing Analytics</a></li>
+                <li><a href="order-management.html">Orders</a></li>
+                <li><a href="feedback.html">User Feedback</a></li>
+                <li><a href="../index.html">Go to Website</a></li>
+                <li><a href="#" id="logout-btn">Logout</a></li>  <!-- ✅ New Logout Button -->
+            </ul>
+        </aside>
+        <main class="dashboard">
+            <h1>Welcome, Admin</h1>
+            <div class="stats">
+                <div class="stat-box">Total Users: <span id="total-users">0</span></div>
+                <div class="stat-box">Total Products: <span id="total-products">0</span></div>
+                <div class="stat-box">Total Sales: <span id="total-sales">$0</span></div>
+            </div>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
